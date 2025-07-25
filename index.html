@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muslima Clone - Search Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #004d66;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      padding: 1em;
+    }
+    .sidebar {
+      width: 25%;
+      padding: 1em;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .main {
+      width: 75%;
+      padding-left: 1em;
+    }
+    .profile-card {
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .profile-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1em;
+    }
+    .profile-info {
+      line-height: 1.5;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar, .main {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Muslima Clone</h1>
+</header>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Search Filters</h3>
+    <label for="age">Age</label>
+    <input type="text" id="age" placeholder="18 - 35" />
+
+    <label for="location">Location</label>
+    <input type="text" id="location" placeholder="e.g. Ethiopia" />
+
+    <label for="religion">Religion</label>
+    <select id="religion">
+      <option>Any</option>
+      <option>Muslim</option>
+      <option>Christian</option>
+    </select>
+
+    <button style="padding: 10px 20px; background: #004d66; color: white; border: none; border-radius: 5px;">Search</button>
+  </div>
+
+  <div class="main">
+    <div class="profile-card">
+      <img src="https://via.placeholder.com/80" alt="Profile" />
+      <div class="profile-info">
+        <strong>Fatima, 28</strong><br/>
+        Addis Ababa, Ethiopia<br/>
+        Muslim, Never Married
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <img src="https://via.placeholder.com/80" alt="Profile" />
+      <div class="profile-info">
+        <strong>Ahmed, 32</strong><br/>
+        Nairobi, Kenya<br/>
+        Muslim, Divorced
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
